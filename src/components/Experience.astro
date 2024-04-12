@@ -1,0 +1,39 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: 'Abril 2024 - Actualmente',
+        title: "Becario de programación",
+        company: "Onets",
+        description: "En Onets, me especializo en el desarrollo de aplicaciones a nivel de backend, utilizando una variedad de programas, entornos y lenguajes de programación. Mi enfoque se centra en la creación de soluciones robustas y escalables que impulsan el rendimiento y la eficiencia del producto.En Onets, me especializo en el desarrollo de aplicaciones a nivel de backend, utilizando una variedad de programas, entornos y lenguajes de programación. Mi enfoque se centra en la creación de soluciones robustas y escalables que impulsan el rendimiento y la eficiencia del producto.",
+        links: "https://www.onets.es/"
+    },
+    {
+        date: 'Junio 2023 - Agosto 2023',
+        title: "Encargado de TI",
+        company : "Efedos Consulting Empresarial, S.L",
+        description: "En el Proyecto soporte al cliente Bergé me dediqué principalmente a la puesta en marcha y mantenimiento de equipos tecnológicos como televisores, proyectores y sistemas Creston. Además, resolvía incidencias tanto de hardware como de software, realizaba maquetación y mantenimiento de equipos informáticos, y gestionaba envíos y preparación de paquetes a través de Rapid Express. Utilizaba herramientas de control remoto como TeamViewer, Escritorio Remoto de Windows y AnyDesk, así como también trabajaba con certificados electrónicos y firma electrónica. Tenía experiencia en sistemas Windows Server 2012 y 2016, incluyendo el manejo de Directorio Activo para altas y bajas de usuarios y gestión de recursos compartidos. Utilizaba herramientas de ticketing como ServiceNow para la gestión de incidencias y llevaba a cabo el control de inventario. Además, participaba en proyectos relacionados con tecnología.",
+        links: "https://bergelogistics.com/"
+    },
+    {
+        date: 'Marzo 2022 - Septiembre 2022',
+        title: "Técnico informático",
+        company : "Alten Spain",
+        description: "En el Proyecto soporte al cliente Proyecto Soporte y sistemas en administración pública (Ministerio de igualdad/Instituto de la mujer) proporcioné soporte técnico a usuarios tanto en hardware como en software, resolviendo incidencias tanto de forma presencial como remota. Realicé maquetación y clonación de equipos utilizando Acronis, e instalé software y hardware según las necesidades corporativas. Utilicé herramientas de control remoto como TeamViewer, Escritorio Remoto de Windows y AnyDesk, y trabajé con certificados electrónicos y firma electrónica. Además, gestioné sistemas Windows Server 2012 y 2016, administré el Directorio Activo y llevé a cabo el control de inventario, utilizando herramientas de ticketing como Easyvista y Remedy para la gestión de incidencias.",
+        links: "https://www.alten.es/"
+    },
+]
+
+---
+
+<ol class="relative mt-16">
+    {
+      EXPERIENCE.map((experiencie) => (
+        <li class="">
+          <ExperienceItem {...experiencie} />
+        </li>
+      ))
+    }
+  </ol>
+
