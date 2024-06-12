@@ -1,6 +1,8 @@
 ---
 import GitHub from "../icons/GitHub.astro"
 import Java from "../icons/Java.astro"
+import Html from "../icons/Html.astro"
+import Css from "../icons/Css.astro"
 import SpringBoot from "../icons/SpringBoot.astro"
 import Link from "../icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
@@ -16,6 +18,16 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: SpringBoot,
   },
+  HTML: {
+    name: "HTML 5",
+    class: "bg-[#003159] text-white",
+    icon: Html,
+  },
+  CSS: {
+    name: "CSS 3",
+    class: "bg-[#003159] text-white",
+    icon: Css,
+  }
 }
 const PROJECTS = [
   {
@@ -27,15 +39,16 @@ const PROJECTS = [
     image: "/projects/MagicWater.png",
     tags: [TAGS.JAVA, TAGS.SPRINGBOOT],
   },
-  /*
+  
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Gestor de Peliculas",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.JAVA, TAGS.SPRINGBOOT],
-  },*/
+      "Estas es una aplicacion programada desde cero en la cual el usuario podrá Gestionar donde se ubica cada película que tenga descargada o que esté en posesión de ella. La base de datos, está alojada en Firebase.",
+    link: "https://aplicacionpelisweb.web.app/",
+    github: "#",
+    image: "/projects/GestorPeliculas.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVA],
+  },
 
 ]
 ---
@@ -74,7 +87,10 @@ const PROJECTS = [
             <LinkButton href={github}>
               <GitHub class="size-6" />
               Code
-              
+            </LinkButton>
+            <LinkButton href={link}>
+              <Link class="size-6"/>
+              Preview
             </LinkButton>
           )}
         </footer>
